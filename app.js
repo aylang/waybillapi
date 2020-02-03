@@ -20,7 +20,7 @@ mongoClient.connect(function(err, client) {
 
     dbClient = client;
     app.locals.collection = client.db("waybill").collection("waybilllist");
-    app.listen(3000, function(err) {
+    app.listen((process.env.PORT || 3000), function(err) {
         console.log("Сервер ожидает подключения...");
     })
 })
