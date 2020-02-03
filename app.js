@@ -6,9 +6,6 @@ const objectId = require("mongodb").ObjectID;
 const app = express();
 const jsonParser = express.json();
 
-//const url = "mongodb://localhost:27017/";
-//const url = "mongodb+srv://alang:4031982oc@cluster0-tepdd.gcp.mongodb.net";
-//SET MONGOLAB_URI="mongodb+srv://user_waybillapi:user_waybillapi@cluster0-tepdd.gcp.mongodb.net"
 const url = process.env.MONGOLAB_URI;
 const mongoClient = new MongoClient(url, { useUnifiedTopology: true });
 
