@@ -117,7 +117,7 @@ app.get("/api/powerbi", function (request, response) {
       result += "<td>" + item.rides + "</td>";
       result += "</tr>\n";
     });
-    result += "<table>";
+    result += "<table> ";
     response.send(result);
   });
 });
